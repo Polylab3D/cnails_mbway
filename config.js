@@ -1,52 +1,79 @@
 // ==========================================
-// CONFIGURAÇÃO DO SITE MBWAY - WHITE LABEL
+// CONFIGURAÇÃO DO SITE MB WAY - CN BEAUTY LOUNGE
+// Repositório: CNails
 // ==========================================
-// Edite apenas este arquivo para personalizar o site para cada cliente
+// Esta página utiliza a index base da PolyLAB 3D.
 
 const CONFIG = {
-  // Informações do Negócio
+  // Informações do negócio
   business: {
-    name: 'Carolina Marques',           // Ex: "Nails Designer"
-    logoFile: 'logo.svg',               // Nome do arquivo do logo (deve estar na mesma pasta)
+    name: 'Carolina Marques',
+    logoFile: 'logo.svg',
   },
 
-  // Número MBWay
+  // Número MB WAY
   mbway: {
-    phoneDisplay: '+351 963 709 189',        // Formato visual (com espaços)
-    phoneValue: '963709189',            // Número real (sem espaços, será copiado)
+    phoneDisplay: '+351 963 709 189',
+    phoneValue: '963709189',
   },
 
-  // Cores e Estilo
+  // Tema visual inspirado na identidade castanha e bege da CN Beauty Lounge
   theme: {
-  // Fundo geral da página em degradê.
-    
-  'bg-gradient': 'linear-gradient(180deg, #C8B497 0%, #BFA98A 100%)',  // Primeiro valor = topo da página, segundo valor = parte de baixo.
-  
-  'text-color': '#2F2923',  // Cor do nome principal, exemplo: "CN Beauty Lounge".
-  'text-secondary': '#5F5145',  // Cor do subtítulo, exemplo: "Nails & Makeup Artist".
-  'text-muted': 'rgba(80, 65, 52, 0.65)',  // Cor de textos pequenos, como rodapé/copyright.
-  'link-bg': '#FCFCFA',  // Cor de fundo dos botões principais.
-  'link-border': 'rgba(126, 142, 120, 0.22)',  // Cor da borda dos botões principais.
-  'link-text': '#6B7966',  // Cor do texto e dos ícones dentro dos botões.
-  'link-shadow': '0 4px 16px rgba(80, 65, 52, 0.08)',  // Sombra normal dos botões.
-  'link-hover-bg': '#F4F7F1',  // Cor do botão quando passa o rato/clica.
-  'link-hover-shadow': '0 8px 24px rgba(62, 78, 58, 0.14)',  // Sombra do botão quando passa o rato/clica.
-  'social-bg': 'rgba(252, 252, 250, 0.35)',  // Fundo dos ícones sociais redondos, se estiveres a usar.
-  'social-border': 'rgba(252, 252, 250, 0.35)',  // Borda dos ícones sociais redondos.
-  'social-text': '#6B7966',   // Cor dos ícones sociais redondos.
-  'social-hover-bg': '#FCFCFA', // Fundo dos ícones sociais quando passa o rato/clica.
-},
+    // Fundo geral da página em degradê bege
+    'background-color':
+      'linear-gradient(180deg, #CDB89B 0%, #BFA486 100%)',
 
-  // Textos Customizáveis
+    // Fundo do card
+    'card-background': '#FFFDF9',
+
+    // Sombra do card
+    'card-shadow': '0 14px 40px rgba(91, 67, 50, 0.18)',
+
+    // Cor principal do número MB WAY
+    'text-color': '#3F3027',
+
+    // Cor do texto "Número MB WAY"
+    'text-secondary': '#806653',
+
+    // Cor das instruções e rodapé
+    'text-muted': 'rgba(84, 65, 52, 0.72)',
+
+    // Cor da linha divisória
+    'divider-color': 'rgba(112, 83, 62, 0.16)',
+
+    // Fundo castanho dos botões
+    'link-bg': '#7A6252',
+
+    // Cor mais escura ao clicar ou passar o rato
+    'link-hover-bg': '#604C40',
+
+    // Texto e ícones dos botões
+    'link-text': '#FFFFFF',
+  },
+
+  // Textos da página
   text: {
-    pageTitle: 'Pagamento MBWay',       // Título da aba do navegador
-    label: 'Número MBWay',              // Texto acima do número
-    buttonText: 'Copiar e Abrir MB WAY', // Texto do botão
-    successMessage: '✓ Copiado! A abrir MB WAY...', // Mensagem de sucesso
-    errorMessage: 'Erro ao copiar. Seleciona o número manualmente.', // Mensagem de erro
+    pageTitle: 'Pagamento MB WAY',
 
-    // Instruções
-    step1: 'Clica no botão',
-    step2: 'No MB WAY → cola o número',
+    label: 'Número MB WAY',
+
+    buttonText: 'Copiar número',
+
+    openButtonText: 'Abrir MB WAY agora',
+
+    successMessage:
+      '✓ Número copiado! Agora toque em "Abrir MB WAY agora".',
+
+    errorMessage:
+      'Erro ao copiar. Seleciona o número manualmente.',
+
+    step1: 'Clica no botão para copiar o número',
+
+    step2: 'No MB WAY, cola o número',
+  },
+
+  // Rodapé
+  footer: {
+    text: '© 2026 PolyLAB 3D - Todos os direitos reservados',
   },
 };
