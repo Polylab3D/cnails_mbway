@@ -348,7 +348,7 @@
       const isIOS = /iphone|ipad|ipod/.test(userAgent);
 
       if (isAndroid) {
-        window.location.assign(ANDROID_STORE);
+        openAndroidApp();
         return;
       }
 
@@ -358,6 +358,13 @@
       }
 
       window.location.assign(MBWAY_SITE);
+    }
+
+    function openAndroidApp() {
+      const fallbackUrl = encodeURIComponent(ANDROID_STORE);
+      const intentUrl = `intent://pay#Intent;scheme=mbway;package=pt.sibs.android.mbway;S.browser_fallback_url=${fallbackUrl};end`;
+
+      window.location.href = intentUrl;
     }
 
     function openIOSApp() {
