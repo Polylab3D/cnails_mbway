@@ -362,7 +362,7 @@
 
     function openAndroidApp() {
       const fallbackUrl = encodeURIComponent(ANDROID_STORE);
-      const intentUrl = `intent://pay#Intent;scheme=mbway;package=pt.sibs.android.mbway;S.browser_fallback_url=${fallbackUrl};end`;
+      const intentUrl = `intent://#Intent;action=android.intent.action.MAIN;package=pt.sibs.android.mbway;S.browser_fallback_url=${fallbackUrl};end`;
 
       window.location.href = intentUrl;
     }
